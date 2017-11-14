@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "557910596334",
+    "firebase_url": "https://qrscannerregister.firebaseio.com",
+    "project_id": "qrscannerregister",
+    "storage_bucket": "qrscannerregister.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557910596334:android:239b1c1b427e2ab2",
+        "android_client_info": {
+          "package_name": "com.example.sammy.qrscannerregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557910596334-tl33te1jlt81fmsc2d1shec5ebofu9be.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sammy.qrscannerregister",
+            "certificate_hash": "5932190dd7ec0da36d20ef32bc2d5ded48df3be2"
+          }
+        },
+        {
+          "client_id": "557910596334-7hb9a92k2r7plhnl1dhobajtp10jg1t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmBRBEl4Fzzvn8rYbhCwHZo4F7WmBnmio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557910596334-7hb9a92k2r7plhnl1dhobajtp10jg1t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557910596334:android:00167e60ad888ad6",
+        "android_client_info": {
+          "package_name": "com.example.sammy.oasisadminapp17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557910596334-ihnp77l74e3ua3tci5k1b28uk61032uo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sammy.oasisadminapp17",
+            "certificate_hash": "5932190dd7ec0da36d20ef32bc2d5ded48df3be2"
+          }
+        },
+        {
+          "client_id": "557910596334-7hb9a92k2r7plhnl1dhobajtp10jg1t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmBRBEl4Fzzvn8rYbhCwHZo4F7WmBnmio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557910596334-7hb9a92k2r7plhnl1dhobajtp10jg1t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

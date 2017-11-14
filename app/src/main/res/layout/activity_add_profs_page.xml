@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:id="@+id/prof_list"
+            android:prompt="@string/prof_prompt"
+            android:entries="@array/prof_shows"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/staff_member_name"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_below="@id/prof_list"/>
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/no_of_tickets"
+            android:text="0"
+            android:layout_below="@+id/member_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/for_bill"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/count"/>
+
+        <RelativeLayout
+            android:id="@+id/bill_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:hint="@string/no_of_rs_2000_notes"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/n_2000"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_500_notes"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/n_2000"
+                android:id="@+id/n_500"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_200_notes"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/n_500"
+                android:id="@+id/n_200"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_100_notes"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/n_200"
+                android:id="@+id/n_100"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_50_notes"
+                android:layout_below="@+id/n_100"
+                android:id="@+id/n_50"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_20_notes"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/n_50"
+                android:id="@+id/n_20"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="@string/no_of_rs_10_notes"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/n_20"
+                android:id="@+id/n_10"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Pay by ID :-"
+            android:id="@+id/header"
+            android:textSize="18sp"
+            android:layout_below="@+id/bill_form"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/bits_id"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter ID(optional payment)"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:text=""/>
+        <Button
+            android:id="@+id/scan_add_prof"
+            android:layout_below="@id/bits_id"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:text="@string/scan_qr_code1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/status_title"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/scan_add_prof"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="@string/added_status"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/status_title"
+            android:id="@+id/status_image"
+            android:src="@drawable/not_applicable"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:text="Select Prof Show:" />
+
+    </RelativeLayout>
+
+</ScrollView>
